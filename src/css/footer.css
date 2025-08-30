@@ -1,0 +1,83 @@
+.webring-div {
+  margin-bottom: 5vh;
+}
+
+.cs-webring:hover,
+.cs-webring-links:hover {
+  transform: scale(1.1);
+}
+
+.cs-webring-links {
+  margin: 0 10px;
+  transition: all 0.2s;
+}
+
+.app-footer {
+  background-color: rgb(241, 241, 241);
+  text-align: left !important; /* override body rule */
+  padding: 5vmin 0;
+  margin-bottom: 0;
+  height: fit-content;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+[data-theme="dark"] .app-footer {
+  background-color: rgb(8, 8, 8);
+  color: rgb(255, 255, 255);
+}
+
+.footer-text {
+  width: fit-content;
+  color: rgb(70, 70, 70);
+  margin: 3px auto;
+  display: block;
+}
+
+[data-theme="dark"] .footer-text {
+  color: rgb(175, 175, 175);
+}
+
+p.footer-text:hover {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: black !important;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  color: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .cs-webring {
+    width: 7vmin;
+    margin: 0 5px;
+    transition: all 0.2s;
+  }
+
+  .app-footer {
+    font-size: calc(10px + 1vmin);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .cs-webring {
+    width: 3.5vmin;
+    margin: 0 5px;
+    transition: all 0.2s;
+  }
+
+  .app-footer {
+    font-size: calc(10px + 1vmin);
+  }
+}
