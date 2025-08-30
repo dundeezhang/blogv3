@@ -1,10 +1,14 @@
 import Footer from "./components/general/footer";
-import MainBackground from "./components/general/background";
+import Background from "./components/general/background";
+import ArticleList from "./components/home/article-list";
+import Header from "./components/general/header";
 
 export default function Home() {
   return (
     <div>
-      <MainBackground />
+      <Background />
+      <Header />
+      <ArticleList />
       <Footer />
     </div>
   );

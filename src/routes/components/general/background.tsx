@@ -48,7 +48,7 @@ const GlassBackground = styled.div<{ isDarkMode: boolean }>`
   z-index: -99;
 `;
 
-const Grid: React.FC = () => {
+const Background: React.FC = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
@@ -79,4 +79,4 @@ const Grid: React.FC = () => {
   );
 };
 
-export default Grid;
+export default Background;
