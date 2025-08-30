@@ -1,20 +1,5 @@
-.webring-div {
-  margin-bottom: 5vh;
-}
-
-.cs-webring:hover,
-.cs-webring-links:hover {
-  transform: scale(1.1);
-}
-
-.cs-webring-links {
-  margin: 0 10px;
-  transition: all 0.2s;
-}
-
 .app-footer {
   background-color: rgb(241, 241, 241);
-  text-align: left !important; /* override body rule */
   padding: 5vmin 0;
   margin-bottom: 0;
   height: fit-content;
@@ -59,24 +44,12 @@ p.footer-text:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .cs-webring {
-    width: 7vmin;
-    margin: 0 5px;
-    transition: all 0.2s;
-  }
-
   .app-footer {
     font-size: calc(10px + 1vmin);
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .cs-webring {
-    width: 3.5vmin;
-    margin: 0 5px;
-    transition: all 0.2s;
-  }
-
   .app-footer {
     font-size: calc(10px + 1vmin);
   }

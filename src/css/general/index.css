@@ -239,7 +239,7 @@ body {
 }
 
 @media (hover: hover) {
-  s .button:hover {
+  .button:hover {
     background-color: rgb(239, 45, 120);
     color: white;
   }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getArticlePreview } from "../../../utils/articleLoader";
 
 interface CardProps {
@@ -12,8 +12,24 @@ interface CardProps {
 export function Card({ title, date, tag, filename, onClick }: CardProps) {
   const [showPreview, setShowPreview] = useState(false);
   const [preview, setPreview] = useState("");
+  const [canHover, setCanHover] = useState(false);
+
+  useEffect(() => {
+    // Check if device supports hover
+    const mediaQuery = window.matchMedia("(hover: hover)");
+    setCanHover(mediaQuery.matches);
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setCanHover(e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
   const handleMouseEnter = () => {
+    if (!canHover) return;
+
     if (!preview) {
       const articlePreview = getArticlePreview(tag, filename);
       setPreview(articlePreview);
@@ -22,6 +38,7 @@ export function Card({ title, date, tag, filename, onClick }: CardProps) {
   };
 
   const handleMouseLeave = () => {
+    if (!canHover) return;
     setShowPreview(false);
   };
 
