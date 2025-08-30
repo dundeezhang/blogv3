@@ -52,8 +52,8 @@
 }
 
 .card-preview {
-  margin-top: 0.5rem;
-  padding: 0;
+  margin-top: 0;
+  padding: 4px;
   font-size: 0.85em;
   line-height: 1.4;
   color: #555;
@@ -63,13 +63,14 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    margin-top 0.5s ease-in-out;
 }
 
 .card-preview.show {
+  margin-top: 10px;
   max-height: 200px;
   opacity: 1;
-  padding: 0.5rem;
 }
 
 .card-tag {
