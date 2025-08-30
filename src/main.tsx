@@ -14,6 +14,7 @@ import "./css/home/article-list.css";
 import "./css/home/home.css";
 import "./css/articles/reader.css";
 import "./css/tags/tags.css";
+import "./css/articles/comments.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
