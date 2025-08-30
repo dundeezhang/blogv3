@@ -2,7 +2,7 @@
 
 February 26, 2025
 
-> Recall from [Lecture 15](./cs146-lecture-15) the _Amortized Analysis_.
+> Recall from [Lecture 15](./cs146-lecture15) the _Amortized Analysis_.
 
 1. k inserts cost $1$ each ($k$ steps taken).
 2. 1 insert costs $k + 1$ steps - cap is now $2k$ and $k + 1$ steps have been taken.
