@@ -8,6 +8,8 @@ import Article from "./routes/article";
 
 import "./css/general/index.css";
 import "./css/general/footer.css";
+import "./css/general/header.css";
+import "./css/home/article-list.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 

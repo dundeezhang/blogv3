@@ -86,7 +86,6 @@ const Reader = () => {
       >
         {markdownContent}
       </ReactMarkdown>
-      <p className="end-of-article-marker">End of Article</p>
     </div>
   );
 };

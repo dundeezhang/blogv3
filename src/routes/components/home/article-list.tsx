@@ -19,6 +19,7 @@ export default function ArticleList() {
           title={article.title}
           date={article.date}
           tag={article.tag}
+          filename={article.filename}
           onClick={() => handleCardClick(article.tag, article.filename)}
         />
       ))}

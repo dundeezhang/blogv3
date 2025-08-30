@@ -213,3 +213,17 @@ html,
 body {
   background-color: transparent;
 }
+
+.blur-bg {
+  border: 2px solid rgba(231, 231, 231, 0);
+  background-color: #ffffff00;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 5px 1px rgb(211, 211, 211);
+}
+
+[data-theme="dark"] .blur-bg {
+  background-color: #ffffff0f;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+  border-color: #252525;
+}
