@@ -1,9 +1,18 @@
 import { Card } from "./card.tsx";
-import { loadAllArticles } from "../../../utils/articleLoader.ts";
+import {
+  loadAllArticles,
+  getArticlesByTag,
+} from "../../../utils/articleLoader.ts";
 import { useNavigate } from "react-router-dom";
 
-export default function ArticleList() {
-  const articles = loadAllArticles();
+interface ArticleListProps {
+  filterByTag?: string;
+}
+
+export default function ArticleList({ filterByTag }: ArticleListProps) {
+  const articles = filterByTag
+    ? getArticlesByTag(filterByTag)
+    : loadAllArticles();
   const navigate = useNavigate();
 
   const handleCardClick = (tag: string, filename: string) => {

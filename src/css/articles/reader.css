@@ -1,0 +1,32 @@
+.reader-container {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  padding: 0 16px;
+}
+
+.end-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.reader-container blockquote {
+  margin: 20px auto;
+  padding-left: 20px;
+  border-left: solid;
+  border-color: rgb(84, 84, 84);
+}
+
+.reader-container a {
+  text-decoration: none;
+  color: rgb(239, 45, 120);
+}
+
+.reader-container a:visited {
+  color: rgb(239, 45, 120);
+}
+
+.reader-container img {
+  max-width: 600px;
+  width: 80vw;
+}

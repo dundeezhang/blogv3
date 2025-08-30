@@ -1,7 +1,7 @@
 .article-list {
   max-width: 700px;
   margin: 10px auto;
-  padding: 0;
+  padding: 0 16px;
 }
 
 .card {
@@ -12,7 +12,6 @@
   border-radius: 10px;
   align-items: stretch;
   border-bottom: 1px solid #ddd;
-  transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
 
@@ -42,12 +41,14 @@
   font-size: 1.5em;
   margin: 0;
   width: fit-content;
+  font-weight: 600;
 }
 
 .card-date {
   margin: 0;
   font-size: 0.9em;
-  color: #272727;
+  font-weight: 500;
+  color: #4d4d4d;
 }
 
 .card-preview {
@@ -62,7 +63,7 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.2s ease-in-out;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .card-preview.show {
@@ -78,6 +79,7 @@
   padding: 4px 8px;
   border-radius: 4px;
   white-space: nowrap;
+  font-weight: 600;
   margin: 0;
 }
 

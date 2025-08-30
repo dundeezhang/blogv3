@@ -1,0 +1,27 @@
+.tags-container {
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.tags-header {
+  padding: 0 16px;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.active {
+  background-color: rgb(239, 45, 120);
+  color: white;
+}
+
+[data-theme="dark"] .active {
+  background-color: rgb(239, 45, 120);
+}
+
+.no-selection {
+  padding: 0 16px;
+}

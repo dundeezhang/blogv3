@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useTheme } from "../../../hooks/useTheme";
 
-const GridContainer = styled.div<{ isDarkMode: boolean }>`
+const GridContainer = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "isDarkMode",
+})<{ isDarkMode: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +15,9 @@ const GridContainer = styled.div<{ isDarkMode: boolean }>`
   z-index: -100;
 `;
 
-const GridOverlay = styled.div<{ x: number; y: number; isDarkMode: boolean }>`
+const GridOverlay = styled.div.withConfig({
+  shouldForwardProp: (prop) => !["x", "y", "isDarkMode"].includes(prop),
+})<{ x: number; y: number; isDarkMode: boolean }>`
   position: absolute;
   top: -50%;
   left: -50%;
@@ -28,7 +32,9 @@ const GridOverlay = styled.div<{ x: number; y: number; isDarkMode: boolean }>`
   transform: ${({ x, y }) => `translate(${-x / 75}px, ${-y / 75}px)`};
 `;
 
-const GlassBackground = styled.div<{ isDarkMode: boolean }>`
+const GlassBackground = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "isDarkMode",
+})<{ isDarkMode: boolean }>`
   position: fixed;
   top: 0;
   left: 0;

@@ -60,6 +60,17 @@ export function loadAllArticles(): Article[] {
   return articles;
 }
 
+export function getAllTags(): string[] {
+  const articles = loadAllArticles();
+  const tags = [...new Set(articles.map((article) => article.tag))];
+  return tags.sort();
+}
+
+export function getArticlesByTag(tag: string): Article[] {
+  const allArticles = loadAllArticles();
+  return allArticles.filter((article) => article.tag === tag);
+}
+
 export function loadArticle(tag: string, filename: string): string | null {
   const articlePath = `/src/data/articles/${tag}/${filename}`;
   const content = articleModules[articlePath];

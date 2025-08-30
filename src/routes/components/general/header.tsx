@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header>
+    <header className="blur-bg">
       <h1>blog.dhz.app</h1>
       <p className="subtitle">Life and Dev Notes</p>
       <nav>
@@ -12,7 +12,7 @@ export default function Header() {
             <a href="/tags">Tags</a>
           </li>
           <li>
-            <a href="https://dundeezhang.com">Portfolio</a>
+            <a href="https://dundeezhang.com">About</a>
           </li>
           <li>
             <a href="https://x.com/dundeezhang">Twitter</a>

@@ -9,6 +9,7 @@ import {
 
 import { loadArticle } from "../../../utils/articleLoader";
 import { useTheme } from "../../../hooks/useTheme";
+import EndButtons from "./end-buttons";
 
 const Reader = () => {
   const { tag, article } = useParams<{ tag: string; article: string }>();
@@ -46,7 +47,7 @@ const Reader = () => {
 
   if (loading) {
     return (
-      <div>
+      <div className="reader-container">
         <div>Prepping Article!</div>
       </div>
     );
@@ -54,7 +55,7 @@ const Reader = () => {
 
   if (error) {
     return (
-      <div>
+      <div className="reader-container">
         <div>
           <p>Error: {error}</p>
           <button onClick={handleBackClick}>Back to Home</button>
@@ -64,7 +65,7 @@ const Reader = () => {
   }
 
   return (
-    <div className="article-content">
+    <div className="reader-container">
       <ReactMarkdown
         components={{
           code({ className, children }) {
@@ -82,10 +83,24 @@ const Reader = () => {
               <code className={className}>{codeString}</code>
             );
           },
+          img({ src, alt, ...props }) {
+            // handle images
+            let imageSrc = src;
+            if (src?.startsWith("./")) {
+              imageSrc = src.substring(1);
+            } else if (src?.startsWith("../")) {
+              imageSrc = "/" + src.replace(/^\.\.\//, "");
+            } else if (src && !src.startsWith("/") && !src.startsWith("http")) {
+              imageSrc = "/" + src;
+            }
+
+            return <img src={imageSrc} alt={alt} {...props} />;
+          },
         }}
       >
         {markdownContent}
       </ReactMarkdown>
+      <EndButtons />
     </div>
   );
 };
