@@ -9,7 +9,7 @@ export default function Header() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/tags">Tags</a>
+            <a href="/articles">Articles</a>
           </li>
           <li>
             <a href="https://dundeezhang.com">About</a>

@@ -8,7 +8,7 @@ export default function EndButtons() {
         Back to Home
       </button>
       <button
-        onClick={() => (window.location.href = "/tags")}
+        onClick={() => (window.location.href = "/articles")}
         className="blur-bg button"
       >
         Read other Articles

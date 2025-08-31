@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/tags",
+    path: "/articles",
     element: <Tags />,
   },
   {

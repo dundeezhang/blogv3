@@ -7,12 +7,17 @@ import { useNavigate } from "react-router-dom";
 
 interface ArticleListProps {
   filterByTag?: string;
+  limit?: number;
 }
 
-export default function ArticleList({ filterByTag }: ArticleListProps) {
-  const articles = filterByTag
+export default function ArticleList({ filterByTag, limit }: ArticleListProps) {
+  let articles = filterByTag
     ? getArticlesByTag(filterByTag)
     : loadAllArticles();
+
+  if (limit) {
+    articles = articles.slice(0, limit);
+  }
   const navigate = useNavigate();
 
   const handleCardClick = (tag: string, filename: string) => {

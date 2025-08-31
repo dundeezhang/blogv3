@@ -12,14 +12,21 @@ export default function Home() {
         <h2>Welcome to My Blog</h2>
         <p>Explore my brain! You can find some of my course notes here too.</p>
         <p>
-          Here are my most recent articles. Feel free to explore my{" "}
-          <a href="/tags" className="link">
-            tags page
+          If you were looking for my portfolio or projects, they are found at{" "}
+          <a href="https://dundeezhang.com" className="link">
+            dundeezhang.com
           </a>{" "}
-          for a more organized way to view my content.
+          or at any other of my root domains.
+        </p>
+        <p>
+          Here are my 10 most recent articles. See my{" "}
+          <a href="/articles" className="link">
+            articles page
+          </a>{" "}
+          for all my writings and a more robust way to explore them.
         </p>
       </div>
-      <ArticleList />
+      <ArticleList limit={10} />
       <Footer />
     </div>
   );
