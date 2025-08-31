@@ -1,5 +1,4 @@
 # Blog Website
-[![CodeFactor](https://www.codefactor.io/repository/github/dundeezhang/dundeezhangv4/badge)](https://www.codefactor.io/repository/github/dundeezhang/dundeezhangv4)
 
 Built using TypeScript, React, and CSS.
 
