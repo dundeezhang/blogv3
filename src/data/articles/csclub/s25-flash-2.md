@@ -1,4 +1,4 @@
-# S25 CSC FLASH 2!
+# S25 CSC FLASH 2
 
 May 26, 2025
 
