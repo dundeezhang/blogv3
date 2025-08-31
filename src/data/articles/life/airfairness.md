@@ -10,11 +10,11 @@ I am no exception, thus I spent a lot of time during my Winter 2025 study term a
 
 In the above sankey, you can see I applied to 219 jobs through WaterlooWorks and 50 (though it's closer to 100 when I recounted) through external job boards. I ended up getting a job through a posting in WaterlooWorks but most of my friends had no luck there.
 
-Thus, when I recieved a good offer from [airfairness](https://airfairness.com), I couldn't say no. It was already past exams and I hadn't recieved an offer I was remotely happy with yet, so this was a no brainer. Honestly, taking this position in hindsight was a gnarly since it was a new start up that just got into [Velocity](https://www.velocityincubator.com/). However, it also meant that airfairness was taking a big gamble on the 5 interns they were going to hire to get themselves launched.
+Thus, when I recieved a good offer from [airfairness](https://airfairness.com), I couldn’t say no. Exams were already over, and I hadn’t received an offer I was truly excited about, so the decision was a no-brainer. Looking back, accepting this role was a bold move; this was a brand-new startup that had just joined [Velocity](https://www.velocityincubator.com/). However, it also meant that airfairness was taking a big gamble on the 5 interns they were going to hire to get themselves launched.
 
 ## Living Alone
 
-Not only was this term my first internship, but it was also my first time living alone. I've always thought of myself as fairly independent, but it was humbling to realize how much work it actually takes to take care of both an apartment and yourself. I rented a place in Waterloo since airfairness has space within the Velocity communal office, but in the end, that detail turned out to be irrelevant.
+Not only was this term my first internship, but it was also my first time living alone. I've always thought of myself as fairly independent, but it was humbling to realize how much work it actually takes to take care of both an apartment and yourself. I rented a place in Waterloo since airfairness has space within the Velocity communal office, but in the end, that detail turned out to be irrelevant as I didn't go to office much.
 
 My Room:
 
