@@ -27,6 +27,15 @@ export default function Home() {
         </p>
       </div>
       <ArticleList limit={10} />
+      <div className="home-intro">
+        <p>
+          See the rest of my articles on the{" "}
+          <a href="/articles" className="link">
+            articles page
+          </a>
+          .
+        </p>
+      </div>
       <Footer />
     </div>
   );
