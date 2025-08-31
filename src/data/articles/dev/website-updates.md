@@ -36,7 +36,7 @@ The blog page.
 
 This page was the first website I ever made to utilize cards which are a common element in my current web designs. As this was 2021, this predates when everyone switched their design language to use heavily rounded corners, so the corners here are still just slightly rounded. Something I think I got right in this design was the drop shadows behind the cards. It gives the site more of a 3D look without adding too much complexity to the visuals.
 
-Don't be fooled by the fact there are 4 cards for articles. There is only 1 article that works, and the only surviving [article](./online-highschool) from that time to remain on my blog. There were some issues with this design, notably that each blog card was hardcoded into the site, meaning that I had to copy and paste the same div over and over again to add articles. This quickly got tiring, so I stopped updating the blog, which led me to take down dundeezhangv2 entirely.
+Don't be fooled by the fact there are 4 cards for articles. There is only 1 article that works, and the only surviving [article](/life/online-highschool) from that time to remain on my blog. There were some issues with this design, notably that each blog card was hardcoded into the site, meaning that I had to copy and paste the same div over and over again to add articles. This quickly got tiring, so I stopped updating the blog, which led me to take down dundeezhangv2 entirely.
 
 ## dundeezhangv3/dundeezhangv4
 
