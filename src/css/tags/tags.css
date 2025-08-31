@@ -1,5 +1,6 @@
 .tags-container {
   max-width: 700px;
+  min-height: 100vh;
   margin: 10px auto;
 }
 
