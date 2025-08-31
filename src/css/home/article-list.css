@@ -53,13 +53,12 @@
 
 .card-preview {
   margin-top: 0;
-  padding: 4px;
+  padding: 8px 12px;
   font-size: 0.85em;
   line-height: 1.4;
   color: #555;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
-  border-left: 3px solid #ddd;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -100,5 +99,4 @@
 [data-theme="dark"] .card-preview {
   color: #ccc;
   background-color: rgba(255, 255, 255, 0.05);
-  border-left-color: #555;
 }
