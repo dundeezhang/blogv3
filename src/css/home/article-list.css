@@ -53,7 +53,7 @@
 
 .card-preview {
   margin-top: 0;
-  padding: 8px 12px;
+  padding: 2px 12px;
   font-size: 0.85em;
   line-height: 1.4;
   color: #555;
@@ -67,6 +67,7 @@
 }
 
 .card-preview.show {
+  padding: 8px 12px;
   margin-top: 10px;
   max-height: 200px;
   opacity: 1;
