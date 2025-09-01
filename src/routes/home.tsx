@@ -19,14 +19,14 @@ export default function Home() {
           or at any other of my root domains.
         </p>
         <p>
-          Here are my 10 most recent articles. See my{" "}
+          Here are my 5 most recent articles. See my{" "}
           <a href="/articles" className="link">
             articles page
           </a>{" "}
           for all my writings and a more robust way to explore them.
         </p>
       </div>
-      <ArticleList limit={10} />
+      <ArticleList limit={5} />
       <div className="home-intro">
         <p>
           See the rest of my articles on the{" "}
