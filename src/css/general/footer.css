@@ -18,6 +18,7 @@
   color: rgb(70, 70, 70);
   margin: 3px auto;
   display: block;
+  text-align: center;
 }
 
 [data-theme="dark"] .footer-text {
@@ -41,16 +42,4 @@ p.footer-text:hover {
 
 [data-theme="dark"] .theme-toggle:hover {
   color: white !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .app-footer {
-    font-size: calc(10px + 1vmin);
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .app-footer {
-    font-size: calc(10px + 1vmin);
-  }
 }
